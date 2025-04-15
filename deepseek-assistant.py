@@ -119,7 +119,6 @@ def login_page():
             st.session_state['DEESEEK_API_KEY'] = api_key
             st.session_state['logged_in'] = True
             st.success("登录成功！")
-            st.experimental_rerun()  # 刷新页面，跳转到对话页面
         else:
             st.error("请输入有效的 API Key")
 
